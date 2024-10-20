@@ -1,0 +1,263 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="cv.jpg">
+        <script src="https://kit.fontawesome.com/a65394fbbf.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" media="screen and (max-width:900px)" href="phone.css">
+        <link rel="stylesheet" media="screen and (max-width:695px)" href="phone2.css">
+        <link rel="stylesheet" media="screen and(max-width:1170px)" href ="tablet.css">
+        <title>My Portfolio</title>
+        <script>
+            // Get the modal
+var modal = document.getElementById('myModal');
+
+// Get the images and insert them inside the modal - use its "alt" text as a caption
+var images = document.querySelectorAll('.gallery img');
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
+// Loop through all gallery images
+images.forEach(function(image) {
+    image.addEventListener('click', function() {
+        modal.style.display = "block"; // Show the modal
+        modalImg.src = this.src; // Set modal image to clicked image source
+        captionText.textContent = this.alt; // Set caption text to the image alt text
+    });
+});
+
+// Get the <span> element that closes the modal
+var span = document.querySelector(".close");
+
+// When the user clicks on <span> (x), close the modal
+span.addEventListener('click', function() {
+    modal.style.display = "none"; // Hide the modal
+});
+
+// Close the modal if the user clicks anywhere outside the modal content
+window.addEventListener('click', function(event) {
+    if (event.target === modal) {
+        modal.style.display = "none"; // Hide modal if click outside
+    }
+});
+
+// Close modal on Escape key press
+document.addEventListener('keydown', function(event) {
+    if (event.key === "Escape") {
+        modal.style.display = "none"; // Close the modal on Escape key
+    }
+});
+
+            </script>
+            
+    </head>
+    <body>
+        <!-- Navbar -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home"><i class="fa-solid fa-house"></i>&nbsp; &nbsp; Home</a></li>
+                <li><a href="#projects"><i class="fa-solid fa-diagram-project"></i>&nbsp; &nbsp;Projects</a></li>
+                <li><a href="#education"><i class="fa-solid fa-user-graduate"></i>&nbsp; &nbsp; Education</a></li>
+                <li><a href="#about"><i class="fa-solid fa-address-card"></i>&nbsp; &nbsp; About</a></li>
+                <li><a href="#contact"><i class="fa-solid fa-phone"></i>&nbsp; &nbsp; Contact Me</a></li>
+            </ul>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home">
+            <h1 class="heading">This is</h1>
+            <h1 class="heading">MUHAMMAD ASHIQUR RAHMAN</h1>
+            <br><br>
+            <p>HERE IS MY RESUME</p>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <h1 class="heading">Projects</h1>
+            <div class="gallery">
+                <img src="kidocode-poster.png" alt="Kidocode languages picture">
+                <img src="Screenshot 2023-06-02 185658.png" alt="E-commerce website">
+                <img src="Screenshot 2024-08-26 163533.png" alt="MIT app game">
+                <img src="Screenshot 2024-09-03 135632.png" alt="Data scraping schools">
+                <img src="Screenshot 2024-09-05 114141.png" alt="Data scraping">
+                <img src="Screenshot 2024-10-21 040828.png" alt="Kidomode (t-shirt)">
+                <img src="Screenshot 2024-10-21 040954.png" alt="DFD diagram TMS">
+                <img src="1 (1).png" alt="C++">
+                <img src="1 (2).png" alt="C++">
+                <img src="Screenshot 2024-10-21 041027.png" alt="Tour management system page">
+                <img src="Screenshot 2024-10-21 041039.png" alt="Admin dashboard TMS">
+                <img src="Screenshot 2024-10-21 041153.png" alt="E-commerce website">
+                <img src="Screenshot 2024-10-21 041129.png" alt="Admin dashboard for e-commerce">
+                <img src="Screenshot 2024-10-21 041555.png" alt="Shipment tracking page">
+                <img src="Screenshot 2024-10-21 041432.png" alt="Supply chain">
+                <img src="Screenshot 2024-10-21 041256.png" alt="Mobile apps developed">
+            </div>
+            <div id="myModal" class="modal">
+                <span class="close">&times;</span>
+                <img class="modal-content" id="img01">
+                <p id="caption" style="color: white; text-align: center; margin-top: 20px;"></p>
+            </div>
+            
+        </section>
+        <!-- Skills Section -->
+<!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills">
+    <h1 class="heading">Skills</h1>
+    <div class="skill-container">
+        <div class="skill">
+            <h3>Python</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Web Development (HTML, CSS, JS)</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 85%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>Turtle Graphics (Python)</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>PHP</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>C++</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 90%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>C</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 95%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>SQL</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 75%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MySQL</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 70%;"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <h3>MIT App Inventor</h3>
+            <div class="skill-bar">
+                <div class="skill-level" style="width: 80%;"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Experience Section -->
+<!-- Experience Section -->
+<section id="experience">
+    <h1 class="heading">Experience</h1>
+    <div class="experience-container">
+        <div class="experience">
+            <h3>KidoCode Intern</h3>
+            <p><strong>Duration:</strong> June 2023 - Present</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Assisted in teaching programming languages to students.</li>
+                <li>Developed engaging educational materials and projects.</li>
+                <li>Participated in team meetings to enhance project development.</li>
+            </ul>
+        </div>
+        <div class="experience">
+            <h3>Project Developer</h3>
+            <p><strong>Duration:</strong> March 2022 - May 2023</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Worked on various web development projects using HTML, CSS, and JavaScript.</li>
+                <li>Collaborated with designers to create user-friendly interfaces.</li>
+                <li>Implemented responsive design to enhance user experience on multiple devices.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+
+        <!-- Education Section -->
+        <section id="education">
+            <h1 class="heading">Education</h1>
+            <div class="columns">
+                <div class="box">
+                    <h2>Middle School</h2>
+                    <p>I studied in Little Jewels till grade 6.</p>
+                </div>
+                <div class="box">
+                    <h2>High School</h2>
+                    <p>I was in the football team, won tournaments, and completed O levels with straight A's in Science.</p>
+                </div>
+                <div class="box">
+                    <h2>Diploma</h2>
+                    <p>I am currently doing my Diploma in Information Technology at Multimedia University.</p>
+                </div>
+                <div class="box">
+                    <h2>Degree</h2>
+                    <p>Will be pursuing a degree at Multimedia University Malaysia as well.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about">
+            <h1 class="heading">About</h1>
+            <div class="about">
+                <img src="duza - Copy.jpg" alt="My picture">
+                <div class="name">
+                    <h2>Muhammad Ashiqur Rahman</h2>
+                    <p>My name is Ashiq, and I live in Kuala Lumpur, Malaysia. I am majoring in computer engineering with a focus on Python and Web Development. I have developed several projects and teach programming to kids.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+            <h1 class="heading">Contact</h1>
+            <h4>Interested to collaborate or to enquire more? Feel free to contact me at:</h4>
+            <div class="contact-content">
+                <a href="mailto:duzadox99ace@gmail.com" title="email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/ashiqur-rahman-604727118/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/duzadox/" title="Instagram"><i class="fa-brands fa-square-instagram"></i></a>
+            </div>
+        </section>
+        <div id="myModal" class="modal">
+            <span class="close">&times;</span>
+            <p id="caption" style="color: white; text-align: center; margin-top: 20px;"></p>
+            <img class="modal-content" id="img01">
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <div class="footer-content">
+                <p class="credit">&#169 Copyright 2024 DUZADOX
+                    <br>
+                    Developed by DUZADOX
+                </p>
+            </div>
+        </footer>
+    </body>
+</html>
